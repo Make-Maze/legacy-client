@@ -6,7 +6,7 @@ class Member {
     try {
       return axios({
         method: "GET",
-        url: "/member/me",
+        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/member/me",
       });
     } catch (e) {
       throw e;

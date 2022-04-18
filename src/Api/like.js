@@ -10,7 +10,7 @@ class Like {
       };
       return axios({
         method: "POST",
-        url: "/like/add",
+        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/like/add",
         data,
       });
     } catch (e) {
@@ -24,7 +24,7 @@ class Like {
     try {
       return axios({
         method: "GET",
-        url: "/like/getLikes",
+        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/like/getLikes",
       });
     } catch (e) {
       throw e;
@@ -36,7 +36,7 @@ class Like {
     try {
       return axios({
         method: "DELETE",
-        url: `/like/delete/${likeId}`,
+        url: `http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/like/delete/${likeId}`,
       });
     } catch (e) {
       toast.error("삭제 실패");

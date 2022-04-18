@@ -11,7 +11,7 @@ class Map {
       };
       return axios({
         method: "POST",
-        url: "/map/add",
+        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/map/add",
         data,
       });
     } catch (e) {
@@ -25,7 +25,7 @@ class Map {
     try {
       return axios({
         method: "GET",
-        url: "/map/getAllMaps",
+        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/map/getAllMaps",
       });
     } catch (e) {
       throw e;
@@ -37,7 +37,7 @@ class Map {
     try {
       return axios({
         method: "GET",
-        url: "/map/getMaps",
+        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/map/getMaps",
       });
     } catch (e) {
       throw e;
@@ -49,7 +49,7 @@ class Map {
     try {
       return axios({
         method: "DELETE",
-        url: `/map/delete/${mapId}`,
+        url: `http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/map/delete/${mapId}`,
       });
     } catch (e) {
       toast.error("삭제 실패");
