@@ -12,7 +12,7 @@ class Auth {
       };
       return axios({
         method: "POST",
-        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/auth/login",
+        url: "https://13.125.40.125:8080/auth/login",
         data,
       });
     } catch (e) {
@@ -28,7 +28,7 @@ class Auth {
       };
       return axios({
         method: "POST",
-        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/auth/reissue",
+        url: "https://13.125.40.125:8080/auth/reissue",
         data,
       });
     } catch (e) {

@@ -6,13 +6,12 @@ class Member {
     try {
       return axios({
         method: "GET",
-        url: "http://ec2-13-125-40-125.ap-northeast-2.compute.amazonaws.com:8080/member/me",
+        url: "https://13.125.40.125:8080/member/me",
       });
     } catch (e) {
       throw e;
     }
   }
-  
 }
 
 export default new Member();
