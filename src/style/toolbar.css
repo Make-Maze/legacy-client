@@ -1,0 +1,7 @@
+.toolbar {
+  margin-top: 30px;
+}
+
+.toolbar > span {
+  margin-right: 30px;
+}

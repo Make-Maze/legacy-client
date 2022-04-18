@@ -1,0 +1,29 @@
+.sidebar > div {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 0 20px 20px;
+  display: table;
+}
+
+.blackCircle {
+  background-image: url("../Assets/Item/block3.png");
+}
+
+.redCircle {
+  background-image: url("../Assets/Item/block2.png");
+}
+
+.yellowCircle {
+  background-image: url("../Assets/Item/block.png");
+}
+
+.greenCircle {
+  background-image: url("../Assets/Item/block4.png");
+}
+
+a > img {
+  width: 40px;
+  height: 40px;
+}
